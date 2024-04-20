@@ -27,11 +27,32 @@ return (
 
   <div className='container mx-auto px-4 md:px12 my-8 '>
     <PosterSlider 
-    title='Recommaned Movies'
-     subject="list of recommaned movies"
+     title='Recommaned Movies'
+     subject="List of recommaned movies"
      posters ={recomendedMovies} 
      isDark =  {false}
-     />
+    />
+  </div>
+  <div className="bg-premier-800 py-12" >
+    <div className ="container mx-auto px-4 md:px-12 my-8">
+      <div className="hidden md:flex">
+        <img src="" alt="Rupay" className="w-full h-full"/>
+      </div>
+      <PosterSlider
+      title="premiers"
+      subject ="brand new releases every friday "
+      posters = {premierMovies}
+      isDark = {true}
+      />
+    </div>
+  </div>
+  <div className='container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3 '>
+    <PosterSlider
+    title ="Online Streaming Event"
+    subject ="online stream Event "
+    poster={onlineStreamEvents}
+    isDark={false} 
+    />
   </div>
 
   </>
